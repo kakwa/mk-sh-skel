@@ -53,7 +53,7 @@ while getopts ":hn:" opt; do
         exit 1
         ;;
     :)
-      echo "Option -test.sh requires an argument." >&2
+      echo "Option -$OPTARG requires an argument." >&2
         help
         exit 1
         ;;
