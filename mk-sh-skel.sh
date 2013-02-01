@@ -1,4 +1,5 @@
 #!/bin/sh
+#this script is released under the MIT Public License
 
 help(){
   echo "usage: `basename $0` -n <new/script/path>"
