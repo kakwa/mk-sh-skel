@@ -44,6 +44,8 @@ while getopts ":hn:" opt; do
   esac
 done
 EOF
+
+chmod 755 $NEW_SCRIPT_PATH
 }
 
 while getopts ":hn:" opt; do
