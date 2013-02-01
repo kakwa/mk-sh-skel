@@ -14,7 +14,7 @@ cat >$NEW_SCRIPT_PATH <<EOF
 #!/bin/sh
 
 help(){
-  echo "usage: `basename $0` <args>"
+  echo "usage: \`basename \$0\` <args>"
   echo ""
   echo "<description>"
   echo "arguments:"
@@ -28,10 +28,10 @@ while getopts ":hn:" opt; do
     h) help
         ;;
 #    n)
-#        NAME="$OPTARG"
+#        NAME="\$OPTARG"
 #        ;;
     \?)
-        echo "Invalid option: -$OPTARG" >&2
+        echo "Invalid option: -\$OPTARG" >&2
         help
         exit 1
         ;;
