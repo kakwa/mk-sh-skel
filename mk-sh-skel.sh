@@ -42,6 +42,7 @@ while getopts ":hn:" opt; do
         ;;
   esac
 done
+EOF
 }
 
 while getopts ":hn:" opt; do
