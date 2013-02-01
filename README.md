@@ -1,13 +1,13 @@
-= mk-sh-skel =
+# mk-sh-skel #
 ==========
 
 just a simple script skeleton initializer
 
-== License ==
+## License ##
 
 mk-sh-skel is released under the MIT Public License
 
-== Installation ==
+## Installation ##
 
 As root:
 ```shell
@@ -15,7 +15,7 @@ curl https://raw.github.com/kakwa/mk-sh-skel/master/mk-sh-skel.sh -o /usr/local/
 chmod 755 /usr/local/bin/mk-sh-skel.sh
 ```
 
-== Usage ==
+## Usage ##
 
 It's quite simple:
 
@@ -23,7 +23,7 @@ It's quite simple:
 mk-sh-skel.sh -n <path/to/new/script>
 ```
 
-== Skeleton output ==
+## Skeleton output ##
 
 It generates a basic skeleton with help and getopts
 
