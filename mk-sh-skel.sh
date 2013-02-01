@@ -24,7 +24,7 @@ help(){
 }
 
 while getopts ":hn:" opt; do
-  case $opt in
+  case \$opt in
 
     h) help
         ;;
