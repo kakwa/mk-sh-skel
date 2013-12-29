@@ -27,7 +27,7 @@ mk-sh-skel.sh -n <path/to/new/script>
 
 It generates a basic skeleton with help and getopts
 
-```shell
+```bash
 #!/bin/sh
 
 help(){
@@ -40,13 +40,13 @@ help(){
 }
 
 while getopts ":hn:" opt; do
-  case ? in
-
+  case $opt in
     h) help
         ;;
 #    n)
 #        NAME="$OPTARG"
 #        ;;
+
     \?)
         echo "Invalid option: -$OPTARG" >&2
         help
