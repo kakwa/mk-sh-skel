@@ -22,7 +22,7 @@ usage: \`basename \$0\` <args>
 
 arguments:
   <options>
-\EOF
+%EOF
   exit 1
 }
 
@@ -47,7 +47,7 @@ while getopts ":hn:" opt; do
   esac
 done
 EOF
-
+sed -i "s/%EOF/EOF/" $NEW_SCRIPT_PATH
 chmod 755 $NEW_SCRIPT_PATH
 }
 
