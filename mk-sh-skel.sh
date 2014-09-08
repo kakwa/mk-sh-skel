@@ -29,7 +29,8 @@ arguments:
 while getopts ":hn:" opt; do
   case \$opt in
 
-    h) help
+    h) 
+        help
         ;;
     n)
         NAME="\$OPTARG"
@@ -40,7 +41,7 @@ while getopts ":hn:" opt; do
         exit 1
         ;;
     :)
-      echo "Option -\$OPTARG requires an argument." >&2
+        echo "Option -\$OPTARG requires an argument." >&2
         help
         exit 1
         ;;
