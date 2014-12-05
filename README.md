@@ -13,7 +13,7 @@ As root:
 ```shell
 rm -f /usr/local/bin/mksh
 curl https://raw.githubusercontent.com/kakwa/mk-sh-skel/master/mk-sh-skel.sh \
--o /usr/local/bin/mk-sh-skel.sh
+-o /usr/local/bin/mksh
 chmod 755 /usr/local/bin/mksh
 #end
 ```
@@ -23,7 +23,7 @@ chmod 755 /usr/local/bin/mksh
 It's quite simple:
 
 ```shell
-mk-sh-skel.sh -n <path/to/new/script>
+mksh -n <path/to/new/script>
 ```
 
 ## Skeleton output ##
@@ -63,7 +63,4 @@ while getopts ":hn:" opt; do
   esac
 done
 ```
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kakwa/mk-sh-skel/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
