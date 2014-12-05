@@ -34,11 +34,14 @@ It generates a basic skeleton with help and getopts
 #!/bin/sh
 
 help(){
-  echo "usage: `basename $0` <args>"
-  echo ""
-  echo "<description>"
-  echo "arguments:"
-  echo "  <options>"
+  cat <<EOF
+usage: `basename $0` <args>
+
+<description>
+
+arguments:
+  <options>
+EOF
   exit 1
 }
 
