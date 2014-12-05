@@ -11,8 +11,11 @@ mk-sh-skel is released under the MIT Public License
 
 As root:
 ```shell
-curl https://raw.github.com/kakwa/mk-sh-skel/master/mk-sh-skel.sh -o /usr/local/bin/mk-sh-skel.sh
-chmod 755 /usr/local/bin/mk-sh-skel.sh
+rm -f /usr/local/bin/mksh
+curl https://raw.githubusercontent.com/kakwa/mk-sh-skel/master/mk-sh-skel.sh \
+-o /usr/local/bin/mk-sh-skel.sh
+chmod 755 /usr/local/bin/mksh
+#end
 ```
 
 ## Usage ##
