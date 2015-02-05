@@ -1,5 +1,7 @@
 # mk-sh-skel #
 
+[![Join the chat at https://gitter.im/kakwa/mk-sh-skel](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kakwa/mk-sh-skel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 just a simple script skeleton initializer
 
