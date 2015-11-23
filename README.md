@@ -1,8 +1,5 @@
 # mk-sh-skel #
 
-[![Join the chat at https://gitter.im/kakwa/mk-sh-skel](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kakwa/mk-sh-skel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-
 just a simple script skeleton initializer
 
 ## License ##
@@ -11,14 +8,18 @@ mk-sh-skel is released under the MIT Public License
 
 ## Installation ##
 
-As root:
-```shell
+Quick and dirty:
+```bash
 rm -f /usr/local/bin/mksh
-curl https://raw.githubusercontent.com/kakwa/mk-sh-skel/master/mk-sh-skel.sh \
+curl https://raw.githubusercontent.com/kakwa/mk-sh-skel/master/mksh \
 -o /usr/local/bin/mksh
 chmod 755 /usr/local/bin/mksh
 #end
 ```
+Cleaner:
+```bash
+# after recovering the sources
+make install # PREFIX=/usr/local/ DESTDIR=./buildroot/
 
 ## Usage ##
 
