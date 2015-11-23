@@ -2,11 +2,14 @@
 #this script is released under the MIT Public License
 
 help(){
-  echo "usage: `basename $0` -n <new/script/path>"
-  echo ""
-  echo "this script initialize a new script"
-  echo "arguments:"
-  echo "  -n <new/script/path>: the path to the new script"
+  cat <<EOF
+usage: `basename $0` -n <new/script/path>
+
+this script initialize a new script
+arguments:
+   -n <new/script/path>: the path to the new script
+
+EOF
   exit 1
 }
 
@@ -29,22 +32,10 @@ arguments:
 while getopts ":hn:" opt; do
   case \$opt in
 
-    h) 
-        help
-        ;;
-    n)
-        NAME="\$OPTARG"
-        ;;
-    \?)
-        echo "Invalid option: -\$OPTARG" >&2
-        help
-        exit 1
-        ;;
-    :)
-        echo "Option -\$OPTARG requires an argument." >&2
-        help
-        exit 1
-        ;;
+    h)  help;;
+    n)  NAME="\$OPTARG";;
+    \?) echo "Invalid option: -\$OPTARG" >&2 ;help; exit 1 ;;
+    :)  echo "Option -\$OPTARG requires an argument." >&2; help; exit 1;;
   esac
 done
 EOF
@@ -54,22 +45,10 @@ chmod 755 $NEW_SCRIPT_PATH
 
 while getopts ":hn:" opt; do
   case $opt in
-    h) 
-        help
-        ;;
-    n)
-        NEW_SCRIPT_PATH="$OPTARG"
-        ;;
-    \?)
-        echo "Invalid option: -$OPTARG" >&2
-        help
-        exit 1
-        ;;
-    :)
-        echo "Option -$OPTARG requires an argument." >&2
-        help
-        exit 1
-        ;;
+    h)  help;;
+    n)  NEW_SCRIPT_PATH="$OPTARG";;
+    \?) echo "Invalid option: -$OPTARG" >&2; help; exit 1;;
+    :)  echo "Option -$OPTARG requires an argument." >&2 ;help; exit 1;;
   esac
 done
 
