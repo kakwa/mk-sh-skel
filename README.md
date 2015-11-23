@@ -20,6 +20,7 @@ Cleaner:
 ```bash
 # after recovering the sources
 make install # PREFIX=/usr/local/ DESTDIR=./buildroot/
+```
 
 ## Usage ##
 
