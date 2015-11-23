@@ -51,22 +51,10 @@ EOF
 
 while getopts ":hn:" opt; do
   case $opt in
-    h) help
-        ;;
-#    n)
-#        NAME="$OPTARG"
-#        ;;
-
-    \?)
-        echo "Invalid option: -$OPTARG" >&2
-        help
-        exit 1
-        ;;
-    :)
-      echo "Option -$OPTARG requires an argument." >&2
-        help
-        exit 1
-        ;;
+    h)  help;;
+    n)  NAME="$OPTARG";;
+    \?) echo "Invalid option: -$OPTARG" >&2 ;help; exit 1 ;;
+    :)  echo "Option -$OPTARG requires an argument." >&2; help; exit 1;;
   esac
 done
 ```
