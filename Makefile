@@ -5,4 +5,4 @@ all:
 
 install:
 	@mkdir -p ${DESTDIR}${PREFIX}/bin
-	install -m 755 mksh ${DESTDIR}${PREFIX}/bin/
+	install -m 755 mksh-skel ${DESTDIR}${PREFIX}/bin/
